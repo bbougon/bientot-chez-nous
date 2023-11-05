@@ -1,9 +1,9 @@
 {
   "sheetsById": {
-    "Sheet 1": {
+    "BD": {
       "staticOverrides": {
         "byObject": {
-          "Heading 1": {
+          "Planche": {
             "y": 0
           }
         }
@@ -13,11 +13,11 @@
         "length": 10,
         "type": "PositionalSequence",
         "tracksByObject": {
-          "Heading 1": {
+          "Planche": {
             "trackData": {
               "Z5m_FPQR-k": {
                 "type": "BasicKeyframedTrack",
-                "__debugName": "Heading 1:[\"y\"]",
+                "__debugName": "Planche:[\"y\"]",
                 "keyframes": [
                   {
                     "id": "3E1PwDbc0-",
@@ -71,7 +71,7 @@
               },
               "ju-6SlGvS4": {
                 "type": "BasicKeyframedTrack",
-                "__debugName": "Heading 1:[\"position\",\"x\"]",
+                "__debugName": "Planche:[\"position\",\"x\"]",
                 "keyframes": [
                   {
                     "id": "-s_DkQle-Y",
@@ -125,7 +125,7 @@
               },
               "zKBhGWhlxm": {
                 "type": "BasicKeyframedTrack",
-                "__debugName": "Heading 1:[\"position\",\"y\"]",
+                "__debugName": "Planche:[\"position\",\"y\"]",
                 "keyframes": [
                   {
                     "id": "B5CkSsHzrP",
@@ -179,7 +179,7 @@
               },
               "jiNoqjA153": {
                 "type": "BasicKeyframedTrack",
-                "__debugName": "Heading 1:[\"position\",\"z\"]",
+                "__debugName": "Planche:[\"position\",\"z\"]",
                 "keyframes": [
                   {
                     "id": "QReaa0PZhR",
@@ -245,7 +245,6 @@
   },
   "definitionVersion": "0.4.0",
   "revisionHistory": [
-    "M_J8laBMi0BqQSIK",
     "fsfSvYShg5l7bj1Q"
   ]
 }
