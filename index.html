@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theatre.js Tutorial</title>
+    <style>
+        body {
+            margin: 0;
+            color: white;
+            background: black;
+            font-family: sans-serif;
+            overflow: hidden;
+        }
+
+        .centre {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        .conteneur {
+            max-width: 30rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 100vh;
+            perspective: initial;
+            /*background-image: url("./11_okt_4.jpg");*/
+        }
+
+        .film {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        .film img {
+            width: max-content;
+            height: 100%;
+            /*-o-object-fit: cover;*/
+            /*object-fit: cover;*/
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div class="conteneur">
+        <div class="film">
+            <img src="./11_okt_4.jpg" id="article-heading" alt="TEst" class="centre"/>
+        </div>
+    </div>
+</main>
+
+<script type="module">
+    import 'https://cdn.jsdelivr.net/npm/@theatre/browser-bundles@0.5.0-insiders.88df1ef/dist/core-and-studio.js'
+    // We can now access Theatre.core and Theatre.studio from here
+    const { core, studio } = Theatre
+
+    studio.initialize()
+
+    const project = core.getProject('HTML Animation Tutorial')
+    const sheet = project.sheet('Sheet 1')
+    const obj = sheet.object('Heading 1', {
+        position: {
+            x: 0,
+            y: 0,
+            z: 1,
+        },// you can use just a simple default value
+        opacity: core.types.number(1, { range: [0, 1] }), // or use a type constructor to customize
+    })
+
+    const articleHeadingElement = document.getElementById('article-heading')
+
+    obj.onValuesChange((obj) => {
+        articleHeadingElement.style.transform = `scale(${obj.position.z}) translateY(${obj.position.y}px) translateX(${obj.position.x}px)`
+        articleHeadingElement.style.opacity = obj.opacity
+    })
+</script>
+</body>
+</html>
