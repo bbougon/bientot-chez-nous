@@ -95,7 +95,7 @@
                       0.5,
                       0
                     ],
-                    "value": 263
+                    "value": -130
                   },
                   {
                     "id": "jd9HDu1KQi",
@@ -149,7 +149,7 @@
                       0.5,
                       0
                     ],
-                    "value": -240
+                    "value": 364
                   },
                   {
                     "id": "L3e7zsexor",
@@ -245,6 +245,7 @@
   },
   "definitionVersion": "0.4.0",
   "revisionHistory": [
+    "M_J8laBMi0BqQSIK",
     "fsfSvYShg5l7bj1Q"
   ]
 }

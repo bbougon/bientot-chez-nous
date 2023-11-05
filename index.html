@@ -52,19 +52,269 @@
 <main>
     <div class="conteneur">
         <div class="film">
-            <img src="./11_okt_4.jpg" id="article-heading" alt="TEst" class="centre"/>
+            <img src="./PlancheS_32412.jpg" id="article-heading" alt="TEst" class="centre"/>
         </div>
     </div>
 </main>
 
 <script type="module">
-    import 'https://cdn.jsdelivr.net/npm/@theatre/browser-bundles@0.5.0-insiders.88df1ef/dist/core-and-studio.js'
+    import 'https://cdn.jsdelivr.net/npm/@theatre/browser-bundles@0.5.0-insiders.88df1ef/dist/core-only.min.js'
     // We can now access Theatre.core and Theatre.studio from here
-    const { core, studio } = Theatre
+    const { core } = Theatre
 
-    studio.initialize()
-
-    const project = core.getProject('HTML Animation Tutorial')
+    //studio.initialize()
+    const projectState = {
+        "sheetsById": {
+            "Sheet 1": {
+                "staticOverrides": {
+                    "byObject": {
+                        "Heading 1": {
+                            "y": 0
+                        }
+                    }
+                },
+                "sequence": {
+                    "subUnitsPerUnit": 30,
+                    "length": 10,
+                    "type": "PositionalSequence",
+                    "tracksByObject": {
+                        "Heading 1": {
+                            "trackData": {
+                                "Z5m_FPQR-k": {
+                                    "type": "BasicKeyframedTrack",
+                                    "__debugName": "Heading 1:[\"y\"]",
+                                    "keyframes": [
+                                        {
+                                            "id": "3E1PwDbc0-",
+                                            "position": 0,
+                                            "connectedRight": true,
+                                            "handles": [
+                                                0.5,
+                                                1,
+                                                0.5,
+                                                0
+                                            ],
+                                            "value": 130.12987012987014
+                                        },
+                                        {
+                                            "id": "iJAMfaTHSM",
+                                            "position": 2.767,
+                                            "connectedRight": true,
+                                            "handles": [
+                                                0.5508533968942354,
+                                                0.9297187552707034,
+                                                0.5,
+                                                0
+                                            ],
+                                            "value": 130.12987012987014
+                                        },
+                                        {
+                                            "id": "BVXTITP3pJ",
+                                            "position": 5.767,
+                                            "connectedRight": true,
+                                            "handles": [
+                                                0.5,
+                                                1,
+                                                0.5,
+                                                0
+                                            ],
+                                            "value": 0
+                                        },
+                                        {
+                                            "id": "m8w7QnU1_q",
+                                            "position": 10,
+                                            "connectedRight": true,
+                                            "handles": [
+                                                0.5,
+                                                1,
+                                                0.5,
+                                                0
+                                            ],
+                                            "value": 0
+                                        }
+                                    ]
+                                },
+                                "ju-6SlGvS4": {
+                                    "type": "BasicKeyframedTrack",
+                                    "__debugName": "Heading 1:[\"position\",\"x\"]",
+                                    "keyframes": [
+                                        {
+                                            "id": "-s_DkQle-Y",
+                                            "position": 0,
+                                            "connectedRight": true,
+                                            "handles": [
+                                                0.5,
+                                                1,
+                                                0.5,
+                                                0
+                                            ],
+                                            "value": 0
+                                        },
+                                        {
+                                            "id": "v1id2Pvka8",
+                                            "position": 3,
+                                            "connectedRight": true,
+                                            "handles": [
+                                                0.5,
+                                                1,
+                                                0.5,
+                                                0
+                                            ],
+                                            "value": -130
+                                        },
+                                        {
+                                            "id": "jd9HDu1KQi",
+                                            "position": 6,
+                                            "connectedRight": true,
+                                            "handles": [
+                                                0.5,
+                                                1,
+                                                0.5,
+                                                0
+                                            ],
+                                            "value": 13
+                                        },
+                                        {
+                                            "id": "LNt_W6gk7J",
+                                            "position": 8,
+                                            "connectedRight": true,
+                                            "handles": [
+                                                0.5,
+                                                1,
+                                                0.5,
+                                                0
+                                            ],
+                                            "value": -216
+                                        }
+                                    ]
+                                },
+                                "zKBhGWhlxm": {
+                                    "type": "BasicKeyframedTrack",
+                                    "__debugName": "Heading 1:[\"position\",\"y\"]",
+                                    "keyframes": [
+                                        {
+                                            "id": "B5CkSsHzrP",
+                                            "position": 0,
+                                            "connectedRight": true,
+                                            "handles": [
+                                                0.5,
+                                                1,
+                                                0.5,
+                                                0
+                                            ],
+                                            "value": 0
+                                        },
+                                        {
+                                            "id": "fzzkWeaZIO",
+                                            "position": 3,
+                                            "connectedRight": true,
+                                            "handles": [
+                                                0.5,
+                                                1,
+                                                0.5,
+                                                0
+                                            ],
+                                            "value": 364
+                                        },
+                                        {
+                                            "id": "L3e7zsexor",
+                                            "position": 6,
+                                            "connectedRight": true,
+                                            "handles": [
+                                                0.5,
+                                                1,
+                                                0.5,
+                                                0
+                                            ],
+                                            "value": -173
+                                        },
+                                        {
+                                            "id": "lBG5NN75su",
+                                            "position": 8,
+                                            "connectedRight": true,
+                                            "handles": [
+                                                0.5,
+                                                1,
+                                                0.5,
+                                                0
+                                            ],
+                                            "value": -173
+                                        }
+                                    ]
+                                },
+                                "jiNoqjA153": {
+                                    "type": "BasicKeyframedTrack",
+                                    "__debugName": "Heading 1:[\"position\",\"z\"]",
+                                    "keyframes": [
+                                        {
+                                            "id": "QReaa0PZhR",
+                                            "position": 0,
+                                            "connectedRight": true,
+                                            "handles": [
+                                                0.5,
+                                                1,
+                                                0.5,
+                                                0
+                                            ],
+                                            "value": 1
+                                        },
+                                        {
+                                            "id": "rgx1A4NLHY",
+                                            "position": 3,
+                                            "connectedRight": true,
+                                            "handles": [
+                                                0.5,
+                                                1,
+                                                0.5,
+                                                0
+                                            ],
+                                            "value": 1.5
+                                        },
+                                        {
+                                            "id": "_FFj-Rg7DL",
+                                            "position": 6,
+                                            "connectedRight": true,
+                                            "handles": [
+                                                0.5,
+                                                1,
+                                                0.5,
+                                                0
+                                            ],
+                                            "value": 1
+                                        },
+                                        {
+                                            "id": "e3Wq8OKooP",
+                                            "position": 8,
+                                            "connectedRight": true,
+                                            "handles": [
+                                                0.5,
+                                                1,
+                                                0.5,
+                                                0
+                                            ],
+                                            "value": 1.5
+                                        }
+                                    ]
+                                }
+                            },
+                            "trackIdByPropPath": {
+                                "[\"y\"]": "Z5m_FPQR-k",
+                                "[\"position\",\"x\"]": "ju-6SlGvS4",
+                                "[\"position\",\"y\"]": "zKBhGWhlxm",
+                                "[\"position\",\"z\"]": "jiNoqjA153"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "definitionVersion": "0.4.0",
+        "revisionHistory": [
+            "M_J8laBMi0BqQSIK",
+            "fsfSvYShg5l7bj1Q"
+        ]
+    }
+    const project = core.getProject('HTML Animation Tutorial', {state: projectState})
     const sheet = project.sheet('Sheet 1')
     const obj = sheet.object('Heading 1', {
         position: {
@@ -80,6 +330,10 @@
     obj.onValuesChange((obj) => {
         articleHeadingElement.style.transform = `scale(${obj.position.z}) translateY(${obj.position.y}px) translateX(${obj.position.x}px)`
         articleHeadingElement.style.opacity = obj.opacity
+    })
+
+    project.ready.then(() => {
+        sheet.sequence.play({ iterationCount: Infinity, range: [0, 8] })
     })
 </script>
 </body>
