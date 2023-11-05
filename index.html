@@ -333,7 +333,13 @@
     })
 
     project.ready.then(() => {
-        sheet.sequence.play({ iterationCount: Infinity, range: [0, 8] })
+
+
+        sheet.sequence.attachAudio({ source: './musique.mp3' }).then(() => {
+            console.log('Audio loaded!')
+            sheet.sequence.play({ iterationCount: Infinity, range: [0, 40] })
+        })
+
     })
 </script>
 </body>
