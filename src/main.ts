@@ -28,9 +28,10 @@ obj.onValuesChange((obj) => {
 project.ready.then(() => {
 
 
-    sheet.sequence.attachAudio({ source: '/musique.mp3' }).then(() => {
-        console.log('Audio loaded!')
-        return sheet.sequence.play({ iterationCount: Infinity })
-    })
+    // sheet.sequence.attachAudio({ source: '/musique.mp3' }).then(() => {
+    //     console.log('Audio loaded!')
+    //     return sheet.sequence.play({ iterationCount: Infinity })
+    // })
+    return sheet.sequence.play({ iterationCount: Infinity })
 
 })
