@@ -42,3 +42,29 @@ body {
     /*-o-object-fit: cover;*/
     /*object-fit: cover;*/
 }
+
+.leading-tight {
+    line-height: 1.25;
+}
+
+.px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+.border-slate-200 {
+    --tw-border-opacity: 1;
+    border-color: rgb(226 232 240/var(--tw-border-opacity));
+}
+.border {
+    border-width: 1px;
+}
+
+.rounded-sm {
+    border-radius: 4px;
+    cursor: pointer;
+}
+.inline-block {
+    margin-top: 1rem;
+    display: inline-block;
+    background-color: white;
+}
